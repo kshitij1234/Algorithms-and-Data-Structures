@@ -1,6 +1,9 @@
-
-
 /* This Algorithm finds out the factors of a number in O( n^.5 ) */
+
+/*
+ * Input is a single number n whose factors are to be generated.
+ */
+
 
 package Algorithms;
 

@@ -1,5 +1,10 @@
 /* This program prints all the permutations of a string */
-/* The theoritical run time of this algorithm is O( n*n*(n!) ) */
+/* The theoretical run time of this algorithm is O( n*n*(n!) ) */
+
+/*
+ * The input is a single string whose permutations are to be generated.
+ */
+
 
 package Algorithms;
 
