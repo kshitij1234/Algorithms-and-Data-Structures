@@ -57,7 +57,7 @@ public class SieveOfEratosthenes {
 		
 		for(int i:primes)
 		{
-			System.out.print(i+" ");
+			System.out.println(i+" ");
 		}
 		
 		
