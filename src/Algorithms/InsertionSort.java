@@ -1,5 +1,5 @@
 /*
- * Time - O(n^2)
+ * Time - O(n^2) worst case . O(n) best case.
  * In place sorting
  */
 
