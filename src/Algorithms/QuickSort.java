@@ -2,7 +2,6 @@ package Algorithms;
 
 import java.util.Scanner;
 
-import javafx.animation.ParallelTransition;
 
 public class QuickSort {
 
