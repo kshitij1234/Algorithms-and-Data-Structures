@@ -14,17 +14,17 @@ public class BFS {
 		
 		Queue<Node> queue = new LinkedList<>();
 		queue.add(root);
-		
+		root.visited=true;
 		while(!queue.isEmpty())
 		{
 			Node node=queue.poll();
 			System.out.println(node.name);
-			node.visited=true;
 			for(Node n:node.children)
 			{
 				if(!n.visited)
 				{
 					queue.add(n);
+					n.visited=true;
 				}
 			}
 		}
