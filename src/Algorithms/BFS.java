@@ -1,31 +1,38 @@
-/* Implementation of Depth First Search */
-
 package Algorithms;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
-public class DFS {
+public class BFS {
 	
 	public static void search(Node root)
 	{
-		if(root==null||root.visited)
+		if(root.visited)
 			return;
 		
-		System.out.println(root.name);
-		root.visited = true;
+		Queue<Node> queue = new LinkedList<>();
+		queue.add(root);
 		
-		for(Node n:root.children)
+		while(!queue.isEmpty())
 		{
-			if(!n.visited)
+			Node node=queue.poll();
+			System.out.println(node.name);
+			node.visited=true;
+			for(Node n:node.children)
 			{
-				search(n);
+				if(!n.visited)
+				{
+					queue.add(n);
+				}
 			}
 		}
 		
 	}
 	
-	public static void main(String[] args) {
+	
+public static void main(String[] args) {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter number of nodes in graph");
@@ -48,12 +55,11 @@ public class DFS {
 		}
 		
 		for(int i=0;i<n;i++)
-		search(graph.get(i));
+			search(graph.get(i));
 		
 		scanner.close();
 		
 	}
-	
-}
 
+}
 
