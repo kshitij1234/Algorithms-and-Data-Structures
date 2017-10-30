@@ -40,9 +40,9 @@ public class InsertionSort {
 		
 		insertionSort(ar);
 		
-		for(int i:ar)
+		for(int i=0;i<ar.length;i++)
 		{
-			System.out.print(i+" ");
+			System.out.print(ar[i]+" ");
 		}
 		
 		scanner.close();
